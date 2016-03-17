@@ -11,7 +11,12 @@ gitlab::package_ensure: 8.5.1
 
 gitlab_ci_runners_defaults:
   url: "https://gitlab/ci"
-  registration-token: "zw8Noc1foKR4XJD8vvgz"
   executor: "docker"
   docker-image: "ubuntu:trusty"
+
+gitlab_ci_runners:
+  gitlab_runner:
+    url: "https://gitlab/ci"
+    registration-token: "zw8Noc1foKR4XJD8vvgz"
+
 
