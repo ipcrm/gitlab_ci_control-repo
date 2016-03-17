@@ -9,3 +9,9 @@ puppet_enterprise::master::code_manager::authenticate_webhook: false
 
 gitlab::package_ensure: 8.5.1
 
+gitlab_ci_runners_defaults:
+  url: "https://gitlab/ci"
+  registration-token: "1234567890abcdef"
+  executor: "docker"
+  docker-image: "ubuntu:trusty"
+
