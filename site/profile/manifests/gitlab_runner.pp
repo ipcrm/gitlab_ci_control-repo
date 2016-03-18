@@ -5,4 +5,10 @@ class profile::gitlab_runner {
 
   class { '::gitlab::cirunner':
   }
+
+  user {'gitlab-runner':
+    groups  => ['docker'],
+    require => Class['::gitlab:cirunner'],
+  }
+
 }
