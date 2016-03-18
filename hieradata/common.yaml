@@ -11,8 +11,7 @@ gitlab::package_ensure: 8.5.1
 
 gitlab_ci_runners_defaults:
   url: "http://gitlab/ci"
-  executor: "docker"
-  docker-image: "ubuntu:trusty"
+  executor: "shell"
 
 gitlab_ci_runners:
   gitlab_runner:
