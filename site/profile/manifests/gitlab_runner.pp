@@ -8,7 +8,7 @@ class profile::gitlab_runner {
 
   user {'gitlab-runner':
     groups  => ['docker'],
-    require => Class['gitlab:cirunner'],
+    require => Class['gitlab::cirunner'],
   }
 
 }
